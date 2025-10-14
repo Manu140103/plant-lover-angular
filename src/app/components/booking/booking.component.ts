@@ -1,10 +1,13 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 declare var $: any;
 
 @Component({
   selector: 'app-booking',
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './booking.component.html',
   styleUrls: ['./booking.component.css']
 })
